@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-image: url(./nordwood-themes-kRNZiGKtz48-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: TESLA;
+    src: url(./TESLA.ttf);
+}
+
+.logo {
+    font-family: TESLA;
+    border: 0px solid none;
+    color: white;
+    padding: 3px 10px 3px 10px;
+    background-color: #013220;
+    border-radius: 0px 20px 0px 20px;
+}
+
+#clock {
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    text-align: right;
+    border: none;
+    font-family: sans-serif;
+    color: #013220;  
+    margin-right: 40px; 
+    font-weight: 600; 
+}
+
+.taskContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border: 5px solid #013220;
+    border-radius: 25px;
+    position: relative;
+    right: 118px;
+    margin-top: 40px
+}
+
+.taskHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    /* width: 100%; */
+    text-align: center;
+    color: #013220;
+}
+
+#new-task-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+
+#new-task-input {
+    width: 450px;
+    height: 30px;
+    border-radius: 25px;
+    font-size: 14px;
+    border: none;
+    padding-left: 10px;
+}
+
+#new-task-submit {
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
+    font-weight: 600;
+    color: #013220;
+
+}
+
+#new-task-submit:hover {
+    font-weight: 600;
+    color: white;
+    background-color: #013220;
+    border-radius: 5px;
+
+}
+
+.mainTaskHeader {
+    width: 100%;
+}
+
+.mainTaskHeader>h2 {
+    text-align: left;
+}
+
+.tasksHeading {
+    margin-left: 10px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #013220;
+}
+
+#tasks {
+    width: 100%
+}
+
+.task {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+
+
+}
+
+.content {
+    width: 500px;
+}
+
+.action {
+    display: flex;
+    margin-left: 15px;
+}
+
+.text {
+    width: 100%;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    margin-left: 5px;
+    background-color: #013220;
+    color: white;
+    font-weight: 600;
+}
+
+.edit,
+.delete {
+    height: 30px;
+    /* width: 40%; */
+    border-radius: 15px;
+    border: none;
+    margin-left: 5px;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.edit:hover,
+.delete:hover {
+    border-radius: 5px;
+    color: white;
+    background-color: #013220;
+    font-weight: 600;
+}
+
+.delete:hover {
+    background-color: #710c04;
+}
+
+
+.deleteAllTask {
+    height: 30PX;
+    border-radius: 25px;
+    border: none;
+    margin: 2px 6px 6px 2px;
+    background-color: #710c04;
+    color: white;
+    float: right;
+}
